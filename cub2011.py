@@ -22,7 +22,7 @@ class Cub2011(VisionDataset):
                downloaded again.
     """
     base_folder = 'CUB_200_2011/images'
-    # url = 'http://www.vision.caltech.edu/visipedia-data/CUB-200-2011/CUB_200_2011.tgz'
+    url = 'http://www.vision.caltech.edu/visipedia-data/CUB-200-2011/CUB_200_2011.tgz'
     file_id = '1hbzc_P1FuxMkcabkgn9ZKinBwW683j45'
     filename = 'CUB_200_2011.tgz'
     tgz_md5 = '97eceeb196236b17998738112f37df78'

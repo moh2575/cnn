@@ -77,5 +77,5 @@ class Cars(VisionDataset):
 
 
 if __name__ == '__main__':
-    train_dataset = Cars('./cars', train=True, download=False)
-    test_dataset = Cars('./cars', train=False, download=False)
+    train_dataset = Cars('./cars', train=True, download=True)
+    test_dataset = Cars('./cars', train=False, download=True)

@@ -44,7 +44,10 @@ class Aircraft(VisionDataset):
         self.split = split
         self.classes_file = os.path.join(self.root, 'fgvc-aircraft-2013b', 'data',
                                          'images_%s_%s.txt' % (self.class_type, self.split))
-
+        import ssl
+        ssl._create_default_https_context = ssl._create_unverified_context
+        urllib2.urlopen("http://www.robots.ox.ac.uk/~vgg/data/fgvc-aircraft/archives/fgvc-aircraft-2013b.tar.gz").read()
+        requests.get(url, headers=Hostreferer,verify=False)
         if download:
             self.download()
 
